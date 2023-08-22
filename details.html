@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.x.x/angular.min.js"></script>
+        <title>Details</title>
+</head>
+ <body>
+  <div class="stylepage">
+     
+      <section class="headline">
+          <div class="feature-container">
+         <h1>Buy tickets</h1>
+          </div>
+       </section>
+       
+       <div class="logo"><a href="https://sonalichethana.github.io/turtlepage/"><img src="images/logo2.jpg"></a></div>
+       <nav> 
+          <ul>
+              <li><a href="index.html">Buy Tickets</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle2.html">Categories</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle3.html">Hikkaduwa</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle4.html">Threats</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle5.html">Experience</a></li>
+         </ul>
+       </nav>
+       <br>
+       
+    <div class="container">  
+      <form>
+        <h2>Personal Information</h2>
+       <br>  
+         <label>Full name  :</label>
+          <input id="full-name" placeholder="Full name" type="text" tabindex="1" required autofocus>
+        <br>
+        <label>Enter your phone number :</label>
+          <form id="login" onsubmit="process(event)">
+           <input id="phone" type="tel" name="phone" ><br>
+                          
+       <br>
+          <label>Email  :</label>
+          <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+        
+       
+        <label>Confirm E-mail address  :</label>
+        <input id="confirm-email" placeholder="Confirm E-mail address" type="email" tabindex="2" required>
+       
+        <label for="gender">Gender :</label>
+        <select id="gender" name="Gender">
+          <option value="gender">Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Infant">Infant</option>
+        </select>
+        <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+  
+   <button id="ContinueBtn02"  onclick="document.location='Payment.html'">Continue with purchase</button>
+  </form>
+   
+  <div class="summery">
+    <h2>Summery Table</h2>
+    <table id="summery-table">
+        <tbody>
+            <tr>
+                <td>Date</td>
+                <td id="dateColomn"> </td>
+            </tr>
+            <tr>
+                <td>Time Duration</td>
+                <td id="durationColomn"></td>
+            </tr>
+            <tr>
+                <td>Tickets</td>
+                <td>Charges</td>
+            </tr>
+            <tr>
+                <td>Ticket type</td>
+                <td id="ticketType"></td>
+            <tr>
+                <td>Total Payment (USD $)</td>
+                <td id="TotalpayColomn"></td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+  </div>
+   <br>
+<br>
+</div>
+<div class="footer">
+  <div class="social">
+      <h3>Support</h3>
+       <a href="#">Privacy Policy</a>
+       <a href="#">Reviews</a>
+       <a href="#">Feedback</a>
+   </div>
+   <div class="social">
+       <h3>Customer Care</h3>
+       <a href="#">Email: turtlestone@gmail.com</a>
+       <a href="#">Phone No:+94-764565532</a>
+   </div>
+   <div class="social">
+       <h3>About US</h3>
+       <a href="#">Destination</a>
+       <a href="#">Culture</a>
+       <a href="#">Experiences</a>
+   </div>    
+   <div class="social">
+       <h3>Follow US</h3>
+   <div class="social-icon">
+       <i class="fa fa-facebook-official" style="font-size:36px"></i>
+       <i class="fa fa-instagram" style="font-size:36px"></i>
+       <i class="fa fa-twitter" style="font-size:36px"></i>
+       <i class="fa fa-youtube-play" style="font-size:36px"></i>
+       <i class="fa fa-envelope" style="font-size:36px"></i>
+   </div>   
+   </div> 
+   <div class="copywrite-logo">
+      <img src="images/logo2.jpg" alt="logo" width="150px" height="120px">
+      </div>
+   <div class="copywrite">    
+   <p>&copy; 2023 | Designed by <span class="designer">Sonali Chethana</span></p>
+   </div>
+</div>  
+
+  <script src="details.js"></script>
+
+  </body>
+</html>
+

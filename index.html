@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.x.x/angular.min.js"></script>
+    <title>tickets</title>
+
+</head>
+
+<body>
+   <div class="stylepage">
+      <section class="headline">
+       <div class="feature-container">
+        <h1>Buy tickets</h1>
+       </div>
+       </section>
+       <div class="logo"><a href="https://sonalichethana.github.io/turtlepage/"><img src="images/logo2.jpg"></a></div>
+       <nav> 
+          <ul>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle2.html">Categories</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle3.html">Hikkaduwa</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle4.html">Threats</a></li>
+              <li><a href="https://sonalichethana.github.io/turtlepage/turtle5.html">Experience</a></li>
+         </ul>
+       </nav>
+
+       <div class="text-box">
+        <h2>Amazing Experience</h2>
+        <p>Sea turtles are extraordinary creatures that have roamed our oceans for over 100 million years. Unfortunately, mostly due to human interferences such as poaching, beach development and fishing, the sea turtle population is drastically declining. Out of the seven species of sea turtles that exist today, three are classified as endangered and another three as critically endangered.<br><br>
+
+            However, all hope is not lost. The TURTLESTONE is one of many establishments around the world that strives to protect these amazing creatures from becoming extinct by operating its own turtle hatchery. Kosgoda, Bentota and Hikkaduwa are amongst the other south coast destinations where one can see similar conservation efforts to save some of the sea turtle species nesting on the island's beaches; they range from the Green Turtle to the Olive Ridley, Hawksbill, Loggerhead and the giant Leatherback which is the largest sea turtle species in the world.
+         </p>
+         </div>
+         <div class="image">
+            <img src="images/bentota.jpg"  alt="turtle">
+         </div>
+
+
+ <div class="container">
+    <form>
+        <legend>Your basic information</legend>
+        <h2>When do you plan to visit?</h2>
+      <div class="date">
+        <input type="date" id="date" name="date">
+      </div>
+     
+     <div class="guests">
+      <h2>Guests</h2>
+      <table id="guests"></table>
+     </div>
+     
+      <h2>Duration</h2>
+      <select id="duration" multiple>
+        <option value="07:00 am to 08:00 am">07:00 am to 08:00 am</option>
+        <option value="08:00 am to 09:00 am">08:00 am to 09:00 am</option>
+        <option value="09:00 am to 10:00 am">09:00 am to 10:00 am</option>
+        <option value="10:00 am to 11:00 am">10:00 am to 11:00 am</option>
+        <option value="11:00 am to 12:00 pm">11:00 am to 12:00 pm</option>
+        <option value="12:00 pm to 01:00 pm">12:00 pm to 01:00 pm</option>
+        <option value="01:00 pm to 02:00 pm">01:00 pm to 02:00 pm</option>
+        <option value="02:00 pm to 03:00 pm">02:00 pm to 03:00 pm</option>
+        <option value="03:00 pm to 04:00 pm">03:00 pm to 04:00 pm</option>
+        <option value="04:00 pm to 05:00 pm">04:00 pm to 05:00 pm</option>
+        <option value="05:00 pm to 06:00 pm">05:00 pm to 06:00 pm</option>
+      </select>
+
+        <div class="price">
+            <h2>Price Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Charge per person(1H)</th>
+                        <th>Type</th>
+                        <th>Price(USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Normal</td>
+                        <td>Foreigner Adult</td>
+                        <td>10 </td>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>Foreigner Adult</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>Foreigner Child</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>Foreigner Child</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>SL Adult</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>SL Adult</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>SL Child</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>SL Child</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Infant(SL/Foreigner)</td>
+                        <td>0(under 4 years)</td>
+                    </tr>            
+                </tbody>
+            </table>
+        </div>
+        <br>  
+        <button id="ContinueBtn01"><a href="details.html"> Continue with purchase</a></button>
+    </form>
+    
+
+    <div class="summery">
+        <h2>Summary Table</h2>
+        <table id="summaryTable"></table>
+       </div>
+</div>   
+<div class="footer">
+    <div class="social">
+        <h3>Support</h3>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Reviews</a>
+         <a href="#">Feedback</a>
+     </div>
+     <div class="social">
+         <h3>Customer Care</h3>
+         <a href="#">Email: turtlestone@gmail.com</a>
+         <a href="#">Phone No:+94-764565532</a>
+     </div>
+     <div class="social">
+         <h3>About US</h3>
+         <a href="#">Destination</a>
+         <a href="#">Culture</a>
+         <a href="#">Experiences</a>
+     </div>    
+     <div class="social">
+         <h3>Follow US</h3>
+     <div class="social-icon">
+         <i class="fa fa-facebook-official" style="font-size:36px"></i>
+         <i class="fa fa-instagram" style="font-size:36px"></i>
+         <i class="fa fa-twitter" style="font-size:36px"></i>
+         <i class="fa fa-youtube-play" style="font-size:36px"></i>
+         <i class="fa fa-envelope" style="font-size:36px"></i>
+     </div>   
+     </div> 
+     <div class="copywrite-logo">
+        <img src="images/logo2.jpg" alt="logo" width="150px" height="120px">
+        </div>
+     <div class="copywrite">    
+     <p>Copyright &copy; 2023 | Designed by <span class="designer">Sonali Chethana</span></p>
+     </div>
+ </div>  
+    <script src="tickets.js"></script>
+  </body>
+</html>
+
+
+
+
+

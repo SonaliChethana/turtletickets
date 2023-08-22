@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* HEADINGS */
+
+h1, p {
+  color: #e2e9ec; /*Topic color*/
+  text-align: center;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Lato', sans-serif;
+}
+h2{
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-family: sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+  color: #020202;
+}  
+
+ /* BASIC SETUP */
+ .stylepage {
+  width: 100%;
+  height: auto;
+  background-color: #976f7b;
+}
+
+nav{
+  max-width: 100%;
+  background: #333;
+  overflow: auto;
+  height: 71px;
+}
+nav ul{
+  list-style: none;
+  margin: 0 0 0 150px;
+  padding: 0;
+  float: left;
+}
+nav li{
+  float: left;
+  margin-top: 9px;
+}
+.logo img{
+  position: absolute;
+  max-width: 90px;
+  margin: 0 15px;
+  height: 70px;
+}
+nav a{
+  max-width: 100%;
+  display: block;
+  padding: 20px 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+nav a:hover{
+  background: #eb8e0c;
+  height: auto;
+  transition: 0.5s;
+  text-decoration: Uppercase;
+}
+
+
+
+/* SECTIONS */
+
+.headline {
+  max-width: 100%;
+  height: 50vh;
+  min-height: 200px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://www.livingoceansfoundation.org/wp-content/uploads/2020/04/DSC_5066-Ken-Marks-e1589912183356.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*section end*/
+
+
+/*Form start*/
+.container{
+display: flex;
+justify-content: space-between;
+margin: 10rem auto 0 auto;
+}
+form {
+  padding: 10px 20px;
+  margin-left: 10%;
+  margin-bottom: 60px;
+  width: 40%;
+  background-color: rgb(245, 193, 126);
+  border: #2a2c2c solid 1px;
+  box-shadow: #496565 0px 0px 10px 0px;
+  border-radius: 9px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="guest"],
+input[type="tel"],
+input[type="time"],
+input[type="email"],
+input[type="credit card"],
+input[type="CVV"],
+textarea,
+select {
+  border: none;
+  font-size: 1.0em;
+  height: auto;
+  width: 80%;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  border: #49575b;
+  background-color: #e8eeef;
+  color: #414344;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+ select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  font-size: 1.5em;
+  color: #FFF;
+  background-color: #df323d;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  border: 1px solid #49575b;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+button a{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: auto;
+  font-size: 1.5em;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 1.3em;
+  color: #3c3936;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Form end*/
+
+/*table*/
+.summery table {
+  border-collapse: collapse;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-right: 10em;
+  background-color: aquamarine;
+  }
+  .summery h2{
+  text-align: center;
+  margin: 40px 0 0 0;
+  margin-right: 10em;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  .sumeery th {
+  background: #ccc;
+  }
+  
+  .summery th, td {
+  border: 1px solid #5b5959;
+  padding: 8px;
+  }
+  
+  .summery tr:nth-child(even) {
+  background: #efefef;
+  }
+  
+  .summery tr:hover {
+  background: #cf8e8e;
+  }
+  /*table end*/
+
+  /*footer*/
+.footer{
+  margin-bottom: -175px;
+  clear: both;
+  margin-top: -5px;
+  padding: 55px 9% 50px;
+  background-color: rgb(48, 45, 45);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+  #social{
+  overflow: hidden;
+  float: left;
+  display: inline;
+  width: auto;
+  margin: 0 15px 15px 0;
+  line-height: 1.6em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  .social h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(159, 186, 204);
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 1.6em;
+  }
+  .social a{
+  display: block;
+  color: rgb(102, 125, 131);  
+  margin-left: 20px; 
+  margin-top: 8px;
+  }
+  .social-icon i{
+  margin-right: 10px;
+  font-size: 2em;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: #4d7474;
+  }
+  .copywrite-logo{
+    margin: 25px 30px;
+    
+  }
+  .copywrite{
+  text-align: center;
+  color: aliceblue;
+  line-height: 2em;
+  padding: 30px;
+  }
+  .copywrite p{
+    color: #69b9eb;
+  }
+  .designer{
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 0px 5px;
+    text-transform: uppercase;
+  }
+  @media (max-width: 600px) {
+    .footer .social{
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+    .footer .copywrite{
+      text-align: center;      
+      font-size: 1.2em;
+    }
+  }
+  /*footer end*/
+
